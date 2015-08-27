@@ -1,4 +1,4 @@
-<Map font-directory=".">
+<Map font-directory="." background-color="#ffffff">
 <Parameters>
     <Parameter name="bounds">0,0,5,5</Parameter>
 </Parameters>
