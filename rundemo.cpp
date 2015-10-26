@@ -56,10 +56,10 @@ int main ( int, char** )
         datasource_cache::instance().register_datasources("/usr/local/lib/mapnik/input");
         //freetype_engine::register_font("fonts/dejavu-fonts-ttf-2.34/ttf/DejaVuSans.ttf");
 
-        Map m(256, 2048);
+        Map m(256, 256);
         load_map(m, "test.xml");
 
-        m.zoom_to_box(box2d<double>(0, 0, 5, 98));
+        m.zoom_to_box(box2d<double>(0, 0, 5, 10));
 
         image_rgba8 buf(m.width(),m.height());
         agg_renderer<image_rgba8> ren(m,buf);

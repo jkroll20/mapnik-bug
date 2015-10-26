@@ -1,4 +1,5 @@
-CXXFLAGS = $(shell mapnik-config --includes --defines --cxxflags --dep-includes)
+CXX=clang++
+CXXFLAGS = $(shell mapnik-config --includes --defines --cxxflags --dep-includes) -O0 -ggdb
 LDFLAGS = $(shell mapnik-config --libs --dep-libs --ldflags)
 
 OBJ = rundemo.o
